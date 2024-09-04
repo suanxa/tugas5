@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hitung">
+
+    <TextView
+        android:id="@+id/textHITUNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Panjang"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/textHITUNG"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lebar"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/input1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/input2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textHasil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="Hasil 1"
+        android:textSize="18sp"
+        android:layout_below="@id/input3"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textHasil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="Hasil 2"
+        android:textSize="18sp"
+        android:layout_below="@id/textHasil1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCari"
+        android:backgroundTint="#123456"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textHasil2"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

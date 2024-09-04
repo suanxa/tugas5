@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konversi Suhu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input1"
+        android:inputType="number"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="8dp"
+        tools:ignore="Autofill" />
+
+    <Spinner
+        android:id="@+id/pilihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input1"
+        android:layout_margin="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/Suhu" />
+
+
+    <LinearLayout
+        android:id="@+id/tombol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pilihan1"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="361dp"
+        android:layout_height="138dp"
+        android:layout_below="@id/tombol"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:hint="Hasil = "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/konversi"
+        android:layout_width="373dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/txtHasil"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#123456"
+        android:text="Konversi"
+        tools:ignore="ButtonStyle" />
+
+</RelativeLayout>
